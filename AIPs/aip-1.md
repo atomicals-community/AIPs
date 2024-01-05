@@ -3,7 +3,7 @@ aip: 1
 title: AIP Purpose and Guidelines
 status: Draft
 type: Meta
-author: Wizz Wallet <@wizz-wallet>.
+author: Alex Li <@AlexV525>, neeboo <@neeboo>, brutoshi <@brutoshi>.
 created: 2024-1-4
 ---
 
@@ -41,7 +41,7 @@ There are three types of AIP:
   - **Networking**: includes improvements around [proxy](https://github.com/atomicals/electrumx-proxy)
     and [indexer](https://github.com/atomicals/atomicals-electrumx).
   - **Interface**: includes improvements around language-level standards.
-  - **ARC**: application-level standards and conventions, including contract standards such as token standards,
+  - **Application**: application-level standards and conventions, including contract standards such as token standards,
     name registries, URI schemes, library/package formats, and wallet formats.
 
 - A **Meta AIP** describes a process surrounding Atomicals or proposes a change to (or an event in) a process.
@@ -77,12 +77,16 @@ The *AIP reviewer* is currently [@atomicals](https://github.com/atomicals) only.
 
 Before you begin writing a formal AIP, you should vet your idea.
 Ask the Atomicals community first if an idea is original to avoid wasting time on something that will be rejected based on prior research.
-It is thus recommended to open a discussion thread on [the Atomicals Community Discussions](https://github.com/orgs/atomicals-community/discussions) to do this.
+It is thus recommended to open a discussion thread on
+[the Atomicals Community Discussions](https://github.com/orgs/atomicals-community/discussions) to do this.
 
-Once the idea has been vetted, your next responsibility will be to present (by means of an AIP) the idea to the reviewers and all interested parties,
+Once the idea has been vetted, your next responsibility will be to present
+(by means of an AIP) the idea to the reviewers and all interested parties,
 invite editors, developers, and the community to give feedback on the aforementioned channels.
-You should try and gauge whether the interest in your AIP is commensurate with both the work involved in implementing it and how many parties will have to conform to it.
-For example, the work required for implementing a Core AIP will be much greater than for an ARC and the AIP will need sufficient interest from the Atomicals client teams.
+You should try and gauge whether the interest in your AIP is commensurate with
+both the work involved in implementing it and how many parties will have to conform to it.
+For example, the work required for implementing a Core AIP will be much greater than for an Application
+and the AIP will need sufficient interest from the Atomicals client teams.
 Negative community feedback will be taken into consideration and may prevent your AIP from moving past the Draft stage.
 
 ### Core AIPs
@@ -196,7 +200,7 @@ The headers must appear in the following order.
 
 `type`: *One of `Standards Track`, `Meta`, or `Informational`*
 
-`category`: *One of `Core`, `Networking`, `Interface`, or `ARC`* (Optional field, only needed for `Standards Track` AIPs)
+`category`: *One of `Core`, `Networking`, `Interface`, or `Application`* (Optional field, only needed for `Standards Track` AIPs)
 
 `created`: *Date the AIP was created on*
 
@@ -242,7 +246,7 @@ The URL cannot point to Github pull requests, any URL which is ephemeral, and an
 ### `type` header
 
 The `type` header specifies the type of AIP: Standards Track, Meta, or Informational.
-If the track is Standards please include the subcategory (core, networking, interface, or ARC).
+If the track is Standards please include the subcategory (core, networking, interface, or application).
 
 ### `category` header
 
@@ -308,8 +312,7 @@ The `description` field in the preamble:
 
 ### AIP numbers
 
-When referring to an AIP with a `category` of `ARC`, it must be written in the hyphenated form `ARC-X` where `X` is that AIP's assigned number.
-When referring to AIPs with any other `category`, it must be written in the hyphenated form `AIP-X` where `X` is that AIP's assigned number.
+When referring to AIPs, it must be written in the hyphenated form `AIP-X` where `X` is that AIP's assigned number.
 
 ### RFC 2119 and RFC 8174
 
